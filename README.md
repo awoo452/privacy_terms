@@ -1,24 +1,30 @@
-# README
+# Privacy Terms
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails app for hosting standard legal pages: Privacy, Terms, and Accessibility.
 
-Things you may want to cover:
+## Pages
+- `/` (root) renders Privacy
+- `/privacy`
+- `/terms`
+- `/accessibility`
 
-* Ruby version
+## Content
+Content is stored in `config/legal_content.json`. Update the copy there and the pages will reflect it.
 
-* System dependencies
+## Setup
+```bash
+bin/setup
+```
 
-* Configuration
+## Run
+```bash
+bin/rails s
+```
 
-* Database creation
+## Tests
+```bash
+bin/rails test
+bin/rails test:system
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+System tests run with `rack_test` for CI compatibility.
