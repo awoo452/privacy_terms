@@ -1,8 +1,8 @@
-<section class="legal-page">
+<section>
   <h1><%= @page["title"] %></h1>
 
   <% if @effective_date.present? %>
-    <p class="legal-meta">Effective <%= @effective_date %></p>
+    <p>Effective <%= @effective_date %></p>
   <% end %>
 
   <p><%= @page["intro"] %></p>
@@ -20,7 +20,7 @@
     <% end %>
   <% end %>
 
-  <nav class="legal-nav">
+  <nav>
     <%= link_to "Privacy", "/privacy" %> |
     <%= link_to "Terms", "/terms" %> |
     <%= link_to "Accessibility", "/accessibility" %>
